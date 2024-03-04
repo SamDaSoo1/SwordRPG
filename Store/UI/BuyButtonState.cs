@@ -1,4 +1,4 @@
-using DG.Tweening;
+ï»¿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,7 +50,7 @@ public class BuyButtonState : MonoBehaviour, IPointerState
         if (quantity.Count == 0) 
         {
             SoundManager.instance.PlaySFX(eSound.Button);
-            buyFailText.ModifyText("¼ö·®À» ¼³Á¤ÇØÁÖ¼¼¿ä.", new Color(0, 233 / 255f, 233 / 255f, 1));
+            buyFailText.ModifyText("ìˆ˜ëŸ‰ì„ ì„¤ì •í•´ì£¼ì„¸ìš”.", new Color(0, 233 / 255f, 233 / 255f, 1));
             buyFailText.Disappear(); 
             return; 
         }
