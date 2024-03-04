@@ -9,14 +9,14 @@ public class DarkBallStart : MonoBehaviour
 
     private void Awake()
     {
-        speed = 0.17f;
+        speed = 30f;
     }
 
     void Update() 
     {
         if (Time.timeScale == 0) return;
 
-        transform.Translate(Vector3.back * speed);
+        transform.Translate(Vector3.back * speed * Time.deltaTime);
 
         if (transform.position.y > ArrivalLocation)
         {
