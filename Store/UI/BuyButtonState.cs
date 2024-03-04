@@ -50,7 +50,7 @@ public class BuyButtonState : MonoBehaviour, IPointerState
         if (quantity.Count == 0) 
         {
             SoundManager.instance.PlaySFX(eSound.Button);
-            buyFailText.ModifyText("¼ö·®À» ¼³Á¤ÇØÁÖ¼¼¿ä.", new Color(0, 233 / 255f, 233 / 255f, 1));
+            buyFailText.ModifyText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.", new Color(0, 233 / 255f, 233 / 255f, 1));
             buyFailText.Disappear(); 
             return; 
         }
@@ -59,6 +59,5 @@ public class BuyButtonState : MonoBehaviour, IPointerState
             SoundManager.instance.PlaySFX(eSound.Window);
         }
         window.GetComponent<RectTransform>().localScale = Vector3.one;
-        //window.GetComponent<RectTransform>().DOScale(Vector3.one, 0.1f).SetEase(Ease.Linear);
     }
 }
